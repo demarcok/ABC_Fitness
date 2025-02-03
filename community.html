@@ -14,7 +14,7 @@
             <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
             <a href="about.html">About Us</a>
-            <a href="community.html">Community Corner</a>
+            <a href="community.html">Community</a>
         </nav>
     </header>
     <main>
@@ -45,8 +45,11 @@
     </main>
     <footer>
         <div class="newsletter">
-            <input type="email" placeholder="Enter your email to subscribe">
-            <button id="subscribe">Subscribe</button>
+            <form onsubmit="return subscribe();">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+              </form>
         </div>
         <div class="social-media">
             <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
@@ -57,13 +60,31 @@
             <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
             <a href="about.html">About Us</a>
-            <a href="community.html">Community Corner</a>
+            <a href="community.html">Community</a>
         </nav>
     </footer>
     <script>
-        document.getElementById('subscribe').addEventListener('click', () => {
-            alert('Thank you for subscribing!');
-        });
+        function subscribe() {
+            // Get the email value from an input element with id "email"
+            const email = document.getElementById('email').value.trim();
+            
+            // Check if the email field is empty
+            if (email === '') {
+                alert('Please enter an email address.');
+                return false;
+            }
+            
+            // Regular expression pattern for basic email validation
+            const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+            
+            // If the input passes validation, continue with the subscription process
+            alert('Thank you for subscribing');
+            return true;
+        }
     </script>
 </body>
 </html>

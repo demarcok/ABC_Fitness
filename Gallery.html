@@ -14,7 +14,7 @@
             <a href="index.html">Home</a>
             <a href="Gallery.html">Gallery</a>
             <a href="about.html">About</a>
-            <a href="community.html">Contact</a>
+            <a href="community.html">Community</a>
         </nav>
     </header>
     <div class="viewBtn">
@@ -89,8 +89,11 @@
 
     <footer>
         <div class="subscribe">
-            <input type="email" placeholder="Enter your email">
-            <button id="subscribe">Subscribe</button>
+            <form onsubmit="return subscribe();">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+              </form>
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -155,6 +158,27 @@
         function updateCart() {
             const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
             cartItems.innerHTML = cart.map(item => `<li>${item}</li>`).join('');
+        }
+        function subscribe() {
+            // Get the email value from an input element with id "email"
+            const email = document.getElementById('email').value.trim();
+            
+            // Check if the email field is empty
+            if (email === '') {
+                alert('Please enter an email address.');
+                return false;
+            }
+            
+            // Regular expression pattern for basic email validation
+            const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+            
+            // If the input passes validation, continue with the subscription process
+            alert('Thank you for subscribing');
+            return true;
         }
     </script>
 </body>
