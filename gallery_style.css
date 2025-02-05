@@ -2,10 +2,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #1e1e1e;
         }
 
         header, footer {
-            background-color: #FBD6CE;
+            background-color: #121212;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -13,7 +14,7 @@
         }
 
         header a.logo {
-            color: #013C4A;
+            color: #c5c3c3;
             text-decoration: none;
             font-size: 1.5em;
             font-weight: bold;
@@ -24,7 +25,7 @@
         }
 
         header nav a, footer nav a {
-            color: #013C4A;
+            color: #c5c3c3;
             text-decoration: none;
             margin: 0 10px;
             padding: 5px 10px;
@@ -37,7 +38,7 @@
         }
 
         .title {
-            color: #013C4A;
+            color: #c5c3c3;
             font-size: 1.5em;
         }
 
@@ -52,7 +53,7 @@
         }
 
         footer .subscribe button {
-            background-color: #013C4A;
+            background-color: #AE232D;
             color: white;
             border: none;
             padding: 5px 10px;
@@ -81,6 +82,7 @@
             border: 1px solid #ddd;
             padding: 10px;
             border-radius: 5px;
+            color:#c5c3c3
         }
 
         .gallery-item img {
@@ -89,8 +91,8 @@
         }
 
         .gallery-item button {
-            background-color: #013C4A;
-            color: white;
+            background-color: #AE232D;
+            color: #c5c3c3;
             border: none;
             padding: 5px 10px;
             cursor: pointer;
@@ -105,7 +107,7 @@
             position: relative;
             top: 10px;
             left: 10px;
-            background-color: #013C4A;
+            background-color: #AE232D;
             color: white;
             border: none;
             padding: 10px;

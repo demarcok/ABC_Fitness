@@ -2,12 +2,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #121212;
+            color: #c5c3c3;
         }
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: #FBD6CE;
+            background-color: #1e1e1e;
             padding: 10px 20px;
         }
         header .logo {
@@ -18,7 +20,7 @@
         }
         header .title {
             font-size: 1.8em;
-            color: #013C4A;
+            color: #C5C3C3;
             text-align: center;
         }
         header nav {
@@ -27,7 +29,7 @@
         }
         header nav a {
             text-decoration: none;
-            color: #013C4A;
+            color: #C5C3C3;
             font-size: 1em;
             padding: 5px 10px;
             border-radius: 5px;
@@ -38,7 +40,7 @@
             color: white;
         }
         footer {
-            background-color: #FBD6CE;
+            background-color: #1e1e1e;
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -58,8 +60,8 @@
         }
         footer .newsletter button {
             padding: 5px;
-            background-color: #013C4A;
-            color: white;
+            background-color: #AE232D;
+            color: #C5C3C3;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -74,10 +76,12 @@
         }
         footer nav a {
             text-decoration: none;
-            color: #013C4A;
+            color: #C5C3C3;
         }
         footer nav a:hover {
-            text-decoration: underline;
+            background-color: #49B8A5;
+            color: #fff;
+            border-radius: 5px;
         }
         main {
             padding: 20px;
@@ -87,7 +91,7 @@
         }
         .section h2 {
             margin-bottom: 20px;
-            color: #013C4A;
+            color: #C5C3C3;
         }
         .border-box {
             border: 1px solid #013C4A;
@@ -96,10 +100,10 @@
             margin-bottom: 20px;
         }
         .customer-spotlight .border-box {
-            background-color: #E7A827;
+            background-color: #AE232D;
         }
         .community-involvement .border-box {
-            background-color: #013C4A;
+            background-color: #AE232D;
             color: white;
         }
   

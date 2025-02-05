@@ -3,25 +3,27 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #1e1e1e;
+            color: #C5C3C3;
         }
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #FBD6CE;
+            background-color: #121212;
             padding: 10px 20px;
         }
 
         header .logo {
-            color: #013C4A;
+            color: #C5C3C3;
             font-weight: bold;
             text-decoration: none;
             font-size: 1.5em;
         }
 
         header .title {
-            color: #013C4A;
+            color: #C5C3C3;
             font-size: 1.8em;
         }
 
@@ -31,7 +33,7 @@
         }
 
         header nav a {
-            color: #013C4A;
+            color: #C5C3C3;
             text-decoration: none;
             font-size: 1em;
             padding: 5px 10px;
@@ -44,7 +46,7 @@
         }
 
         footer {
-            background-color: #FBD6CE;
+            background-color: #121212;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -64,8 +66,8 @@
         }
 
         footer .subscribe button {
-            background-color: #49B8A5;
-            color: white;
+            background-color: #AE232D;
+            color: #C5C3C3;
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
@@ -86,12 +88,14 @@
         }
 
         footer nav a {
-            color: #013C4A;
+            color: #C5C3C3;
             text-decoration: none;
         }
 
         footer nav a:hover {
-            text-decoration: underline;
+            background-color: #49B8A5;
+            color: #fff;
+            border-radius: 5px;
         }
 
         .content {
@@ -110,7 +114,7 @@
 
         .promo-box {
             width: 30%;
-            background-color: #013C4A;
+            background-color: #AE232D;
             color: #C5C3C3;
             padding: 20px;
             border-radius: 10px;
@@ -127,7 +131,7 @@
         }
 
         .shopping-perks {
-            background-color: #E7A827;
+            background-color: #AE232D;
             padding: 20px;
             border-radius: 10px;
         }
@@ -141,7 +145,7 @@
         }
 
         .categories > div {
-            background-color: #E7A827;
+            background-color: #AE232D;
             text-align: center;
             padding: 20px 0;
             
